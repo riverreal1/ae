@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Game">
+      <UniqueIdentifier>{549d2d5e-4eff-4971-950c-f519d6d8ea12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{4d8209b2-fda9-4fab-84fa-b411da3847d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{4a6ac5c1-6757-4905-a62b-02bdcde14207}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Engine">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source\Engine\Interfaces">
+      <UniqueIdentifier>{6675b110-9633-4307-b3ba-57379916abac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Engine\Graphics">
+      <UniqueIdentifier>{c01f04e2-7157-479a-b35a-014232019eca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Engine\System">
+      <UniqueIdentifier>{32c4aa2f-419d-4208-8c8b-5d61e1992022}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\engine\graphics\D3DInit.cpp">
+      <Filter>Source\Engine\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\engine\system\App.cpp">
+      <Filter>Source\Engine\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\engine\system\WinWindow.cpp">
+      <Filter>Source\Engine\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\main.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\engine\graphics\D3DInit.h">
+      <Filter>Source\Engine\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\engine\system\App.h">
+      <Filter>Source\Engine\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\engine\system\helper.h">
+      <Filter>Source\Engine\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\engine\system\WinWindow.h">
+      <Filter>Source\Engine\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\engine\interfaces\IRenderManager.h">
+      <Filter>Source\Engine\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\engine\interfaces\IWindowManager.h">
+      <Filter>Source\Engine\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h" />
+  </ItemGroup>
+</Project>
