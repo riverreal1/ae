@@ -198,9 +198,7 @@ bool D3DInit::CreateStates()
 
 	//------------------------------------------Binding views-------------------------------------------
 
-	m_pD3DDeviceContext->RSSetState(m_pD3DRasterizerState);
-	m_pD3DDeviceContext->OMSetRenderTargets(1, &m_pD3DRenderTargetView, m_pD3DDepthStencilView);
-	m_pD3DDeviceContext->OMSetDepthStencilState(m_pD3DDepthStencilState, 1);
+	
 
 	return true;
 }
@@ -251,6 +249,11 @@ void D3DInit::VStartRendering()
 {
 	assert(m_pD3DDeviceContext);
 	assert(m_pD3DSwapChain);
+
+	m_pD3DDeviceContext->RSSetState(m_pD3DRasterizerState);
+	m_pD3DDeviceContext->OMSetRenderTargets(1, &m_pD3DRenderTargetView, m_pD3DDepthStencilView);
+	m_pD3DDeviceContext->OMSetDepthStencilState(m_pD3DDepthStencilState, 1);
+	
 	const float blue[4] = { 0.0f, 0.0f, 1.0f, 1.0f };
 	m_pD3DDeviceContext->ClearRenderTargetView(m_pD3DRenderTargetView, blue);
 	m_pD3DDeviceContext->ClearDepthStencilView(m_pD3DDepthStencilView, D3D11_CLEAR_DEPTH | D3D11_CLEAR_STENCIL, 1.0f, 0);
